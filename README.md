@@ -1,6 +1,7 @@
 Instructions on Usage:
 
 There are 3 main pages to the package. <br>
+
 First, the main page contains the inputs into the FastLink algorithm. There are options for the user to input two datasets which must have the same headers (column names).
 After entering the datasets, the user will be presented with the option of choosing which columns need to be linked together(WIP). After choosing, click accept to continue. Then the set of chosen headers appear 
 which need to be checked off. There are multi-selects with offer these choices: (partial match, stringdist match, gender field, and numeric match). Finishing with these the user can then input a threshold value 
