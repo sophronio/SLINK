@@ -1,0 +1,26 @@
+Package: SLink
+Type: Package
+Title: SLink - User Friendly GUI For Determining Matches In Datasets 
+Version: 0.1.0
+Authors@R: person("Beijun", "Desai", email= "bdesai@sophronnet.com", role = c("aut", "cre"))
+Maintainer: Beijun Desai <bdesai@sophronnet.com>
+Description: The purpose of our project is to develop an R package with an R shiny interface on top of a Python engine. We are going to use the R shiny package to create the interface to the RecordLinkage package. The RecordLinkage package will drive our algorithms to link different data sets of public health record data to each other. Key functionalities of our interface includes the ability to select and weigh linkage parameters for our model.From this model we will take in different datasets and based upon our weighing and metric system we will similar records together. In order to prove validity there will be a manual check option in the a csv file. This csv file will contain all of the possible matches across the datasets and there a user will be able to approve or disapprove on the linkage. Upon approval our R shiny interface will store correct matches within a csv labeled correct_link. Likewise, incorrect matches will be stored within a csv labeled incorrect_link. With these incorrect and correct records we can use a regression algorithm in order to create a confusion matrix. With this confusion matrix we will be able to improve our current model's algorithm by re weighting the user's chosen parameters.From Brandon and Beijun.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Imports: 
+    bslib,
+    dplyr,
+    DT,
+    fastLink,
+    ggplot2,
+    js,
+    shiny,
+    shinyjs,
+    shinythemes,
+    shinyWidgets,
+    stringr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
